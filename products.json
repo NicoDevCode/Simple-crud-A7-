@@ -2,7 +2,13 @@
   "products": [
     {
       "name": "t-shirt",
-      "color": "red"
+      "color": "red",
+      "id": 1
+    },
+    {
+      "name": "pant",
+      "color": "Black",
+      "id": 2
     }
   ]
 }
