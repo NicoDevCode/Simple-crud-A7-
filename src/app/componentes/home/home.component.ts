@@ -13,8 +13,6 @@ export class HomeComponent implements OnInit {
   id = null;
   name = null;
   color = null;
-  f: NgForm;
-
   constructor(private service: ServicesHttpService) {
     this.getProducts();
   }
@@ -68,6 +66,7 @@ export class HomeComponent implements OnInit {
       (data) => {
         console.log('delted');
         this.getProducts();
+        this.cleanImput();
       }
     );
   }
